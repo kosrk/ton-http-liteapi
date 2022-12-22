@@ -1,0 +1,194 @@
+###
+POST {{url}}/v1/lite_server_get_masterchain_info
+Content-Type: application/json
+
+
+###
+POST {{url}}/v1/lite_server_get_masterchain_info_ext
+Content-Type: application/json
+
+{
+    "mode": 0
+}
+
+###
+POST {{url}}/v1/lite_server_get_time
+Content-Type: application/json
+
+
+###
+POST {{url}}/v1/lite_server_get_block
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+}
+
+###
+POST {{url}}/v1/lite_server_get_state
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+}
+
+###
+POST {{url}}/v1/lite_server_get_block_header
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "mode": 0
+}
+
+###
+POST {{url}}/v1/lite_server_send_message
+Content-Type: application/json
+
+{
+    "body": null
+}
+
+###
+POST {{url}}/v1/lite_server_get_account_state
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "account": {
+        "workchain": 0,
+        "id": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+}
+
+###
+POST {{url}}/v1/lite_server_get_shard_info
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "workchain": 0,
+    "shard": 0,
+    "exact": false
+}
+
+###
+POST {{url}}/v1/lite_server_get_all_shards_info
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+}
+
+###
+POST {{url}}/v1/lite_server_get_transactions
+Content-Type: application/json
+
+{
+    "count": 0,
+    "account": {
+        "workchain": 0,
+        "id": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "lt": 0,
+    "hash": "0000000000000000000000000000000000000000000000000000000000000000"
+}
+
+###
+POST {{url}}/v1/lite_server_list_block_transactions
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "mode": 0,
+    "count": 0,
+    "after": null
+}
+
+###
+POST {{url}}/v1/lite_server_get_block_proof
+Content-Type: application/json
+
+{
+    "mode": 0,
+    "known_block": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "target_block": null
+}
+
+###
+POST {{url}}/v1/lite_server_get_config_all
+Content-Type: application/json
+
+{
+    "mode": 0,
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+}
+
+###
+POST {{url}}/v1/lite_server_get_shard_block_proof
+Content-Type: application/json
+
+{
+    "id": {
+        "workchain": 0,
+        "shard": 0,
+        "seqno": 0,
+        "root_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "file_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+}
+
