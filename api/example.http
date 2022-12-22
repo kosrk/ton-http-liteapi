@@ -1,0 +1,120 @@
+###
+POST {{url}}/v1/lite_server_get_masterchain_info
+Content-Type: application/json
+
+###
+POST {{url}}/v1/lite_server_get_masterchain_info_ext
+Content-Type: application/json
+
+{
+  "mode": 0
+}
+
+###
+POST {{url}}/v1/lite_server_get_time
+Content-Type: application/json
+
+###
+POST {{url}}/v1/lite_server_get_block
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  }
+}
+
+###
+POST {{url}}/v1/lite_server_get_state
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  }
+}
+
+###
+POST {{url}}/v1/lite_server_get_block_header
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  },
+  "mode": 0
+}
+
+###
+POST {{url}}/v1/lite_server_list_block_transactions
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  },
+  "mode": 0,
+  "count": 1,
+  "after": null
+}
+
+###
+POST {{url}}/v1/lite_server_get_block_proof
+Content-Type: application/json
+
+{
+  "mode": 0,
+  "known_block": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  },
+  "target_block": null
+}
+
+###
+POST {{url}}/v1/lite_server_get_config_all
+Content-Type: application/json
+
+{
+  "mode": 0,
+  "id": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  }
+}
+
+###
+POST {{url}}/v1/lite_server_get_shard_block_proof
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": 0,
+    "shard": -9223372036854775808,
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  }
+}
