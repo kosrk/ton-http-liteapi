@@ -8,7 +8,7 @@ import (
 var Config = struct {
 	LiteServer    string `env:"LITESERVER,required"`
 	LiteServerKey string `env:"LITESERVER_KEY,required"`
-	APIHost       string `env:"API_HOST" envDefault:"localhost:8081"`
+	APIHost       string `env:"API_HOST" envDefault:"0.0.0.0:8081"`
 }{}
 
 func GetConfig() {

@@ -114,6 +114,8 @@ func buildHandlers() string {
 					writeHttpError(resp, http.StatusInternalServerError, fmt.Sprintf("liteserver request err: %%v", err))
 					return
 				}
+				resp.Header().Add("Content-Type", "application/json")
+				resp.WriteHeader(http.StatusOK)
 				err = utils.JsonEncoder(resp).Encode(response)
 				if err != nil {
 					log.Errorf("response json encoding error: %%v", err)

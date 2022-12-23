@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  ton-http-liteapi:
+    image: ton-http-liteapi
+    container_name: ton-http-liteapi
+    ports:
+      - "8081:8081"
+    restart: always
+    env_file:
+      - .env
+    environment:
+      LITESERVER: ${LITESERVER}
+      LITESERVER_KEY: ${LITESERVER_KEY}
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge

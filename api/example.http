@@ -21,7 +21,7 @@ Content-Type: application/json
 {
   "id": {
     "workchain": 0,
-    "shard": -9223372036854775808,
+    "shard": "-9223372036854775808",
     "seqno": 5456001,
     "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
     "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
@@ -35,7 +35,7 @@ Content-Type: application/json
 {
   "id": {
     "workchain": 0,
-    "shard": -9223372036854775808,
+    "shard": "-9223372036854775808",
     "seqno": 5456001,
     "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
     "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
@@ -49,12 +49,83 @@ Content-Type: application/json
 {
   "id": {
     "workchain": 0,
-    "shard": -9223372036854775808,
+    "shard": "-9223372036854775808",
     "seqno": 5456001,
     "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
     "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
   },
   "mode": 0
+}
+
+###
+POST {{url}}/v1/lite_server_send_message
+Content-Type: application/json
+
+{
+  "body": "te6ccgECCAEAAZYACUYD3JgGuEGgMJAwCi1XNqDg+0ui1J1YMs9w6n94/xw79FEAFwEkEBHvVar////9AgMEBQKgm8ephwAAAACEAQBTQIEAAAAAAAAAAAAAAAAAAAAAAGNhD0IAAAURMF0+AAAABREwXT4Iknhx/gAA660ARStcAEUmEcQAAAADAAAAAAAAAC4GByhIAQFxs/gEKCmri/9jYB98y9qzYBwGP/Uu/WPbH5w69CPilwABKEgBAepb8ef5HgKOfund1xZaHZTtlX0jWEEhxAySkImqMreAABYoSAEB66XRh7pyKoNuVbnXBbwM0vJ4LPXokSMw9Iho7kFIbGAAEgCYAAAFETBN+8QARStcd7Vi/ID9SPKWVODxBnbVBzEPIcf5o/tHzeagqKghXGiSsvSA7RObX6BaSWqWEzuWSTmBgqQdux8nlSK0ltUscACYAAAFETBN+8EAU0CAH/jAObl+3jc4BwGZ9R59jgWqgpxL+jMp6SbuxN8JE6Abq/5AVIzjUTEp+SM4hxMC6OEfLoFC2LbvijAc4Cn84Q=="
+}
+
+###
+POST {{url}}/v1/lite_server_get_account_state
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": 0,
+    "shard": "-9223372036854775808",
+    "seqno": 5456001,
+    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
+    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+  },
+  "account": {
+    "workchain": 0,
+    "id": "4E9D0DAB8729CAD08F3E6EA9550846EC0660DA0F0340D1546798BFF149CDD368"
+  }
+}
+
+###
+POST {{url}}/v1/lite_server_get_shard_info
+Content-Type: application/json
+
+{
+  "id": {
+    "workchain": -1,
+    "shard": "-9223372036854775808",
+    "seqno": 5606046,
+    "root_hash": "caa22991de5156a6acef92d2b601e84afbe83ff6216d32e1893ce2bafc832975",
+    "file_hash": "335d89652b52d8c8515d3ddcdd2ad558001b9a797fc4c0ab52d979ad63aa1045"
+  },
+  "workchain": 0,
+  "shard": "-9223372036854775808",
+  "exact": false
+}
+
+###
+POST {{url}}/v1/lite_server_get_all_shards_info
+Content-Type: application/json
+
+{
+  "id": {
+  "workchain": -1,
+  "shard": "-9223372036854775808",
+  "seqno": 5606046,
+  "root_hash": "caa22991de5156a6acef92d2b601e84afbe83ff6216d32e1893ce2bafc832975",
+  "file_hash": "335d89652b52d8c8515d3ddcdd2ad558001b9a797fc4c0ab52d979ad63aa1045"
+  }
+}
+
+###
+POST {{url}}/v1/lite_server_get_transactions
+Content-Type: application/json
+
+{
+  "count": 5,
+  "account": {
+    "workchain": 0,
+    "id": "4E9D0DAB8729CAD08F3E6EA9550846EC0660DA0F0340D1546798BFF149CDD368"
+  },
+  "lt": "5571384000005",
+  "hash": "787E4DFE75B171B79822F940F0425158A2D982453E080649A2314D640C499666"
 }
 
 ###
@@ -64,13 +135,13 @@ Content-Type: application/json
 {
   "id": {
     "workchain": 0,
-    "shard": -9223372036854775808,
+    "shard": "-9223372036854775808",
     "seqno": 5456001,
     "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
     "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
   },
-  "mode": 0,
-  "count": 1,
+  "mode": 63,
+  "count": 2,
   "after": null
 }
 
@@ -81,11 +152,11 @@ Content-Type: application/json
 {
   "mode": 0,
   "known_block": {
-    "workchain": 0,
-    "shard": -9223372036854775808,
-    "seqno": 5456001,
-    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
-    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+    "workchain": -1,
+    "shard": "-9223372036854775808",
+    "seqno": 5612379,
+    "root_hash": "a5ca5a0e19332a611709c4bd1fb1fcaa612b3f7e0a6224d32f798f29d6a5d52d",
+    "file_hash": "c1082f9e4f315c2b1b6ed1f58fe643885d74bad525b69e52b87ad67107ad55a0"
   },
   "target_block": null
 }
@@ -97,11 +168,11 @@ Content-Type: application/json
 {
   "mode": 0,
   "id": {
-    "workchain": 0,
-    "shard": -9223372036854775808,
-    "seqno": 5456001,
-    "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
-    "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
+    "workchain": -1,
+    "shard": "-9223372036854775808",
+    "seqno": 5606046,
+    "root_hash": "caa22991de5156a6acef92d2b601e84afbe83ff6216d32e1893ce2bafc832975",
+    "file_hash": "335d89652b52d8c8515d3ddcdd2ad558001b9a797fc4c0ab52d979ad63aa1045"
   }
 }
 
@@ -112,7 +183,7 @@ Content-Type: application/json
 {
   "id": {
     "workchain": 0,
-    "shard": -9223372036854775808,
+    "shard": "-9223372036854775808",
     "seqno": 5456001,
     "root_hash": "DC9806B841A03090300A2D5736A0E0FB4BA2D49D5832CF70EA7F78FF1C3BF451",
     "file_hash": "726374D979990AFD5FF1B9C9AFEBC779128EB080CE847FCA7CDBF1BA72E86984"
