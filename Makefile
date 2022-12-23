@@ -1,4 +1,4 @@
 VERSION := latest
 
 build:
-	docker build -t ton-http-liteapi:$(VERSION) --target ton-http-liteapi .
+	docker build -t kosrk/ton-http-liteapi:$(VERSION) --target ton-http-liteapi .
