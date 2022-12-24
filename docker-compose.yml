@@ -3,7 +3,7 @@ version: '3'
 services:
 
   ton-http-liteapi:
-    image: ton-http-liteapi
+    image: kosrk/ton-http-liteapi:latest
     container_name: ton-http-liteapi
     ports:
       - "8081:8081"
