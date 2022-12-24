@@ -2,7 +2,7 @@ module github.com/kosrk/ton-http-liteapi
 
 go 1.19
 
-replace github.com/startfellows/tongo v0.11.1-0.20221218222149-8dbb0b2174fb => github.com/kosrk/tongo v0.7.7-0.20221223191117-483e99861b81
+replace github.com/startfellows/tongo v0.11.1-0.20221218222149-8dbb0b2174fb => github.com/kosrk/tongo v0.7.7-0.20221224214813-43d761e2c023
 
 require (
 	github.com/Rican7/conjson v0.1.0
